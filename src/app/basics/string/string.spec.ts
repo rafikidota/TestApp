@@ -1,8 +1,4 @@
-// describe('String tests');
-
 import { message } from "./string";
-
-// it('it has to return a string');
 
 describe('String tests', () => {
     it('it has to return a string', () => {
