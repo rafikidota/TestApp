@@ -2,7 +2,7 @@ import { EMPTY, Observable, of, throwError } from 'rxjs';
 import { DoctorsComponent } from './doctor.component';
 import { DoctorService } from './doctor.service';
 
-describe('DoctorComponent', () => {
+describe('DoctorsComponent', () => {
     let component: DoctorsComponent;
     const service = new DoctorService(null!);
     beforeEach(() => {
