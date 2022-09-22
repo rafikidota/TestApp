@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { DoctorsComponent } from './intermediates/spies/doctor.component';
 import { DoctorComponent } from './intermediates_integration/doctor/doctor.component';
 import { HospitalComponent } from './intermediates_integration/hospital/hospital.component';
+import { BoosterComponent } from './intermediates_integration/booster/booster.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DoctorsComponent,
     DoctorComponent,
-    HospitalComponent
+    HospitalComponent,
+    BoosterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
