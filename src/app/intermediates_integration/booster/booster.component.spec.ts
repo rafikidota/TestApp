@@ -32,21 +32,20 @@ describe('BoosterComponent', () => {
   });
 
   //TODO: fix this test
-  xit('it has to show progress value in the input', () => {
+  it('it has to show progress value in the input',async () => {
     component.changingValue(5);
     fixture.detectChanges();
-    fixture.whenStable().then(() => {
+    await fixture.whenStable().then(() => {
       const input = fixture.debugElement.query(By.css('input')).nativeElement;
-      // const elem: HTMLInputElement = input.nativeElement;
       expect(input.value).toBe('55');
     });
   });
 
   xit('it has to increase/decrease by 5 when clicking on button',()=>{
     const buttons = fixture.debugElement.queryAll(By.css('.btn-primary'));
-    buttons[0].triggerEventHandler('click',null);
+    buttons[0].triggerEventHandler('click', null);
     expect(component.progress).toBe(45);
-    buttons[1].triggerEventHandler('click',null);
+    buttons[1].triggerEventHandler('click', null);
     expect(component.progress).toBe(50);
   });
   
