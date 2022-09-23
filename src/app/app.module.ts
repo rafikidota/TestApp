@@ -9,6 +9,7 @@ import { HospitalComponent } from './intermediates_integration/hospital/hospital
 import { BoosterComponent } from './intermediates_integration/booster/booster.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './advanced/navbar/navbar.component';
+import { DoctorRouterComponent } from './advanced/doctor-router/doctor-router.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavbarComponent } from './advanced/navbar/navbar.component';
     DoctorComponent,
     HospitalComponent,
     BoosterComponent,
-    NavbarComponent
+    NavbarComponent,
+    DoctorRouterComponent
   ],
   imports: [
     BrowserModule,
