@@ -1,8 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { RouterOutlet } from '@angular/router';
+import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,8 +12,9 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
       ],
+      schemas:[NO_ERRORS_SCHEMA]
     }).compileComponents();
   });
 
@@ -40,5 +42,5 @@ describe('AppComponent', () => {
     const debugElement = fixture.debugElement.query(By.directive(RouterOutlet));
     expect(debugElement).not.toBeNull();
   });
-
+  
 });
